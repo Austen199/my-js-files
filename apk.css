@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full viewport height */
+    text-align: center; /* Centers text in block elements */
+    flex-direction: column; /* Ensures the content is stacked vertically */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes the list items appear horizontally */
+    flex-wrap: wrap; /* Ensures the items wrap to the next line if needed */
+    gap: 20px; /* Adds some space between list items */
+    margin-bottom: 30px; /* Added space below the ul */
+    justify-content: center; /* Centers the list horizontally */
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px; /* Adjusted padding for better balance */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: auto; /* Ensures the items shrink to fit the content */
+    min-width: 150px; /* Minimum width to prevent items from getting too small */
+}
+
+ul li:hover {
+    background-color: #f0f0f0;
+}
+
+ul li i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+ul li svg {
+    width: 16px;
+    height: 16px;
+}
+
+ul li span {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.screenshot img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.social-links svg {
+    width: 24px;
+    height: 24px;
+}
+
+.screenshots {
+    margin-top: 20px;
+}
+
+.section-title.fbold {
+    font-size: 1.5em; /* Slightly smaller */
+    font-weight: bold;
+    color: #2c3e50; /* Keeping the color */
+    margin-bottom: 15px; /* Adjusted margin for a little less space */
+    border-bottom: 2px solid #3498db; /* Slightly thinner border */
+    padding-bottom: 8px; /* Reduced padding */
+    text-transform: uppercase;
+    letter-spacing: 0.8px; /* Slightly reduced letter spacing */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    ul li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        min-width: unset; /* Remove minimum width on smaller screens */
+    }
+
+    ul li i {
+        margin-bottom: 5px;
+    }
+
+    .screenshot img {
+        width: 100%;
+    }
+}
+
